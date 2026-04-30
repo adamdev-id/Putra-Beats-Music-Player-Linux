@@ -1,4 +1,4 @@
-# Putra Beats (Linux Server Version)
+# Putra Beats
 
 <p align="center">
   <img src="https://adamputra-bucket-demo.s3.ap-southeast-1.amazonaws.com/putrabeats.png" alt="Putra Beats Logo" />
@@ -285,8 +285,7 @@ Example using PM2:
 
 ```bash
 npm install -g pm2
-pm2 start index.js --name putra-beats \
-  --update-env
+pm2 start index.js --name putra-beats --update-env
 pm2 save
 pm2 startup
 ```
@@ -432,11 +431,13 @@ The user may have DMs disabled for the server.
 ```txt
 .
 ├── config.json
+├── config.example.json
 ├── deploy-commands.js
 ├── index.js
 ├── package.json
 ├── queue.json
 ├── README.md
+├── .gitignore
 └── secrets/
     └── youtube-cookies.txt
 ```
